@@ -6,8 +6,8 @@
 _offline="false"
 _git="false"
 pkgname=android-vnc-viewer
-pkgver=0.0.0.0.0.0.0.0.0.0.0.0.0.1
-_commit="9e027d6d3eb4cb99b9df8857662893cc70c3f339"
+pkgver=0.0.0.0.0.0.0.0.0.0.0.0.0.1.1
+_commit="68a06ec99ce19ebe33b871fc7396426f026dd827"
 pkgrel=1
 _pkgdesc=(
   "Android camera recorder."
@@ -70,7 +70,7 @@ _tarname="${pkgname}-${_tag}"
     _sum="d4f4179c6e4ce1702c5fe6af132669e8ec4d0378428f69518f2926b969663a91"
   elif [[ "${_tag_name}" == "commit" ]]; then
     _tar="${_tarname}.zip::${_url}/archive/${_commit}.zip"
-    _sum="27c1f4ae9d4a5e0d696176bd846e0ea50b99340876e0a19e8d1cb418b7e77bf3"
+    _sum="cfad77a638c57a817565f5c6f37a0b7a9f1c4777579c274a88c869c35fab723e"
   fi && \
     source+=(
       "${_tar}"
