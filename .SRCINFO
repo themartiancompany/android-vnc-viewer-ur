@@ -1,17 +1,18 @@
 pkgbase = android-vnc-viewer
-	pkgdesc = Android camera recorder.
-	pkgver = 0.0.0.0.0.0.0.0.0.0.0.0.0.1.1
+	pkgdesc = Android VNC viewer.
+	pkgver = 0.0.0.0.0.0.0.0.0.0.0.0.0.1.1.1
 	pkgrel = 1
 	url = https://github.com/themartiancompany/android-vnc-viewer
 	arch = any
 	license = AGPL3
 	checkdepends = shellcheck
 	makedepends = make
-	depends = android-recorder
+	depends = dynssh
+	depends = android-activity-utils
 	depends = libcrash-bash
-	depends = record-tools
-	source = android-vnc-viewer-68a06ec99ce19ebe33b871fc7396426f026dd827.zip::https://github.com/themartiancompany/android-vnc-viewer/archive/68a06ec99ce19ebe33b871fc7396426f026dd827.zip
+	depends = multivnc-helper
+	source = android-vnc-viewer-bee5861f396f6780f6e9fe91c948e5ac7249fd1d.zip::https://github.com/themartiancompany/android-vnc-viewer/archive/bee5861f396f6780f6e9fe91c948e5ac7249fd1d.zip
 	validpgpkeys = 97E989E6CF1D2C7F7A41FF9F95684DBE23D6A3E9
-	sha256sums = cfad77a638c57a817565f5c6f37a0b7a9f1c4777579c274a88c869c35fab723e
+	sha256sums = e31f51b7efb478f15d7da338f96d3f96b45588f92e9a9357c5f75e47c730d955
 
 pkgname = android-vnc-viewer
