@@ -6,11 +6,11 @@
 _offline="false"
 _git="false"
 pkgname=android-vnc-viewer
-pkgver=0.0.0.0.0.0.0.0.0.0.0.0.0.1.1
-_commit="68a06ec99ce19ebe33b871fc7396426f026dd827"
+pkgver=0.0.0.0.0.0.0.0.0.0.0.0.0.1.1.1
+_commit="bee5861f396f6780f6e9fe91c948e5ac7249fd1d"
 pkgrel=1
 _pkgdesc=(
-  "Android camera recorder."
+  "Android VNC viewer."
 )
 pkgdesc="${_pkgdesc[*]}"
 arch=(
@@ -23,9 +23,10 @@ license=(
   AGPL3
 )
 depends=(
-  "android-recorder"
+  "dynssh"
+  "android-activity-utils"
   "libcrash-bash"
-  "record-tools"
+  "multivnc-helper"
 )
 _os="$( \
   uname \
@@ -70,7 +71,7 @@ _tarname="${pkgname}-${_tag}"
     _sum="d4f4179c6e4ce1702c5fe6af132669e8ec4d0378428f69518f2926b969663a91"
   elif [[ "${_tag_name}" == "commit" ]]; then
     _tar="${_tarname}.zip::${_url}/archive/${_commit}.zip"
-    _sum="cfad77a638c57a817565f5c6f37a0b7a9f1c4777579c274a88c869c35fab723e"
+    _sum="e31f51b7efb478f15d7da338f96d3f96b45588f92e9a9357c5f75e47c730d955"
   fi && \
     source+=(
       "${_tar}"
